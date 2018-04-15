@@ -11,10 +11,10 @@ Gem::Specification.new do |s|
   s.email       = ["hai.luut@gmail.com"]
   s.homepage    = "TODO"
   s.summary     = "TODO: Summary of RailsAdminExportToXls."
-  s.description = "TODO: Description of RailsAdminExportToXls."
+  s.description = "Allows to export models to XLS files"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
 
-  s.add_dependency "rails", "~> 4.2.7"
+  s.add_dependency "rails"
 end
