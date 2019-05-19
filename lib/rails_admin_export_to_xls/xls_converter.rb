@@ -14,7 +14,7 @@ module RailsAdminExportToXls
       @empty = ::I18n.t('admin.export.empty_value_for_associated_objects')
       schema_include = schema.delete(:include) || {}
 
-      @associations = schema_include.each_with_object({}) do |(key, values), hash|
+      @associations = schema_include.to_h.each_with_object({}) do |(key, values), hash|
         association = association_for(key)
         model_config = association.associated_model_config
         abstract_model = model_config.abstract_model
